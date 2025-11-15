@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    @font-face {
+        font-family: "Roboto";
+        src: url("fonts/Roboto-Regular-webfont.woff"); 
+    }  
+    @font-face {
+        font-family: "MyFont";
+        src: url("fonts/fonts/ss-bruney.otf") format("otf");
+    }
+    body{
+        font-family: "Roboto" , sans-serif;
+    } 
+header{
+  background: #1f2937;
+  padding: 0 70px;
+    background: #020024;
+background : linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, 
+rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+padding: 50px;
+}
+header img {
+    width: 300px;
+}
+
+.container{ 
+    display: flex;
+
+}
+.logo{
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    width: 500px;
+    font-family: "MyFont";
+}
+.header-link ,a{
+    display: flex;
+    margin-left:auto ;
+    align-items: center;
+    margin-right: 10px;
+}
+.header-link a:hover {
+    text-decoration: underline;
+}
+.header-article{
+    display: flex;
+    margin-top: 30px;
+   
+}
+.header-article >.container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+   
+}
+
+
+.header-article button{
+    width: 80px;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 6px 0;
+    
+}
+.p1, h1{
+    color: #f9faf8;
+    font-size: 24px;
+   
+}
+.header-article span{
+    margin: 20px 0;
+}
+a , span{
+    color: #e5e7eb;
+}
+img{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+a{
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+
+
+/* this is the body design */
+.body-article{
+   background:  linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
+}
+.body-article > h2{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: -30px;
+}
+
+.body-article > .container {
+     display: flex;
+    justify-content: center;
+    
+}
+ .box{
+    border: 2px solid #3882f6;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+   display: flex;
+   justify-content: center;
+}
+/* this target the box and text */
+.card{
+    margin-left: 35px;
+}
+
+.body-article .text{
+    width: 100px;
+    text-align: center;
+    margin-top: -37px;
+    margin-bottom: 10px ;
+    
+    
+}
+.body-article img{
+    width: 200px;
+    border-radius: 10px;
+}
+.body-article h2{
+    padding: 18px 0 ;
+}
+
+/* this is the qoute section */
+.first-section{
+   background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); 
+    display: flex;
+    justify-content: center;    
+}
+.first-section > .container{
+    display: flex;
+    flex-direction: column;
+    padding: 46px; 
+}
+.first-section > .container .quote{
+    font-size: 36px;
+    font-style: italic; 
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+}
+.first-section > .container .author{
+    font-weight: bold;
+    display: flex;
+    margin-left: auto;
+    
+}
+/* making the sign up section */
+.second-section > .main-container {
+    background: #1539eb;
+background: radial-gradient(circle, rgba(21, 57, 235, 1) 0%,
+ rgba(144, 68, 211, 1) 82%, rgba(252, 70, 107, 1) 100%);
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.second-section > .main-container .container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.second-section > .main-container button{
+ border: 1px ;
+margin-left: 30px;
+padding: 3px 5px;
+border-radius: 8px;
+color: black;
+background: #EEAECA;
+ cursor: pointer;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+h4{
+    color: #f9faf8;
+}
+.p2{
+    color: #f9faf8;
+    margin-top: 3px;
+}
+footer{
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+footer a{
+    color: white;
+}
+
+/* for mobile view  */
+
+@media only screen and (max-width: 600px){
+  header img {
+    width: 150px;
+    height: 150px;
+}  
+.header-link {
+    display: flex;
+    flex-direction: column;
+   padding:10px;
+    align-items: flex-start;
+}
+.header-link a {
+    padding: 4px;
+}
+.header-link  .header-link .home{
+    padding-left: -20px;
+}
+.container .logo{
+    width: 100px ;
+}
+.body-article{
+    margin-left: -10px;
+}
+.body-article img{
+    width: 120px;
+    height: 100px;
+}
+
+.second-section > .main-container {
+    width: 480px;
+}
+}
