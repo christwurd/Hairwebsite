@@ -223,14 +223,15 @@ footer a{
 
 @media only screen and (max-width: 600px){
   header img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }  
 .header-link {
     display: flex;
     flex-direction: column;
    padding:10px;
     align-items: flex-start;
+    margin-right: -10px;
 }
 .header-link a {
     padding: 4px;
@@ -245,11 +246,11 @@ footer a{
     margin-left: -10px;
 }
 .body-article img{
-    width: 120px;
+    width: 100px;
     height: 100px;
 }
 
 .second-section > .main-container {
-    width: 480px;
+    width: 420px;
 }
 }

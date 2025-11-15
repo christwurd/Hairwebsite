@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Booking Webpage</title>
+    
+</head>
+<body>
+    
+
+  <h1>Book an Appointment</h1>
+
+  <form id="appointmentForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required><br><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" required><br><br>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" required><br><br>
+
+    <button type="submit">Request Appointment</button>
+  </form>
+  <h1>
+    <div class="home"> <a href="index.html">Back Home</a></div>
+    </h1>
+
+  <div class="request"><h3>Your Appointment Requests</h3></div>
+  <ul id="appointmentList"></ul>
+
+  <hr>
+
+  <!-- 🔐 Admin Login Section -->
+  <div id="adminSection">
+    <h3>Admin Login</h3>
+    <input type="password" id="adminPassword" placeholder="Enter admin password">
+    <button id="adminLogin">Login</button>
+    <p id="loginMessage"></p>
+  </div>
+
+  <!-- 🔧 Hidden Admin Panel -->
+  <div id="adminPanel" style="display: none;">
+    <h2>Admin Approval Panel</h2>
+    <ul id="pendingList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+  <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home  a{
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-size: large;
+  margin-left: -50px;
+  
+}
+a:hover{
+text-decoration: underline;
+}
+    body{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 150px;
+       background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+    h1{
+       margin: 15px 0; 
+    }
+    form > button{
+        background-color: #DE46FC;
+        padding: 5px;
+        border: none;
+        border-radius: 7px;
+    }
+    .request{
+        margin: 10px 0 10px;
+        margin-left: -40px;
+    }
+    #adminSection > h3{
+        margin:10px 0 4px ;  
+    }
+    #adminSection button{
+        padding: 2px 4px;
+    }
+
+
+         #adminSection button {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+         #adminSection button {
+            margin: 10px;
+            padding: 10px 25px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          #adminSection button:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+  </style>
+</body>
+</html>
+
