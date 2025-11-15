@@ -225,6 +225,8 @@ footer a{
   header img {
     width: 120px;
     height: 120px;
+    margin: 0 0 0 20px;
+    background-color: red;
 }  
 .header-link {
     display: flex;
@@ -242,8 +244,8 @@ footer a{
 .container .logo{
     width: 100px ;
 }
-.body-article{
-    margin-left: -10px;
+.body-article .card{
+    margin-left: 15px;
 }
 .body-article img{
     width: 100px;
@@ -251,6 +253,11 @@ footer a{
 }
 
 .second-section > .main-container {
-    width: 420px;
+    width: 360px;
+    
 }
+.second-section .container{
+    margin: -30px;
+}
+
 }
